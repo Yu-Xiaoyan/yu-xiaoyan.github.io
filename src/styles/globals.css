@@ -1,11 +1,17 @@
-/* html, body {
-  font-family: "Times New Roman", Times, serif;
-} */
-
+@import url('https://fonts.cdnfonts.com/css/linux-libertine?styles=18742,18743,18744,18745');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1, h2, h3, strong, b {
+  font-family: "Linux Libertine", "Libertine", serif !important;
+  font-weight: 700 !important;
+}
 
 @keyframes gradient-float {
   0%, 100% {
@@ -25,38 +31,38 @@
 @keyframes gradient-blur {
   0%, 100% {
     filter: blur(80px);
-    opacity: 0.5;
+    opacity: 0.4;
   }
   25% {
     filter: blur(120px);
-    opacity: 0.7;
+    opacity: 0.6;
   }
   50% {
     filter: blur(160px);
-    opacity: 0.8;
+    opacity: 0.7;
   }
   75% {
     filter: blur(100px);
-    opacity: 0.7;
+    opacity: 0.5;
   }
 }
 
 @keyframes gradient-stroke {
   0%, 100% {
     stroke-width: 100;
-    stroke-opacity: 0.5;
+    stroke-opacity: 0.4;
   }
   25% {
     stroke-width: 120;
-    stroke-opacity: 0.7;
+    stroke-opacity: 0.6;
   }
   50% {
     stroke-width: 80;
-    stroke-opacity: 0.8;
+    stroke-opacity: 0.7;
   }
   75% {
     stroke-width: 110;
-    stroke-opacity: 0.7;
+    stroke-opacity: 0.5;
   }
 }
 

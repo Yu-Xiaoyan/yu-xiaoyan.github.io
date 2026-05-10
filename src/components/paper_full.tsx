@@ -16,15 +16,17 @@ export const PaperFull = ({
   return (
     <Card className="py-1 w-full bg-gray-0" shadow="none">
       <CardBody className="grid grid-cols-8 p-0 gap-2 items-start justify-between relative z-10">
-        <div
-          className="col-span-8 md:col-span-3 hidden md:flex item-center h-[100px] mx-2 overflow-hidden bg-center bg-contain bg-no-repeat"
-          style={{ backgroundImage: `url(${thumbnail})` }}
-        />
-        <div className="flex flex-col col-span-5 md:col-span-4">
-          <p className="text-normal font-bold" >{title}</p>
+        {thumbnail && (
+          <div
+            className="col-span-8 md:col-span-3 hidden md:flex item-center h-[100px] mx-2 overflow-hidden bg-center bg-contain bg-no-repeat"
+            style={{ backgroundImage: `url(${thumbnail})` }}
+          />
+        )}
+        <div className={`flex flex-col col-span-8 ${thumbnail ? "md:col-span-4" : "md:col-span-7"}`}>
+          <p className="text-small font-bold">{title}</p>
           <small className="text-default-500">{authors}</small>
           <small className="text-default-500 font-bold">
-            <span style={{ fontFamily: "Sans Serif" }}>{accepted} {date}</span>
+            {accepted} {date}
           </small>
         </div>
 

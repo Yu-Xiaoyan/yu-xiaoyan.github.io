@@ -16,8 +16,10 @@ import DefaultLayout from "@/layouts/default";
 import { profileData } from "@/data/profile.tsx";
 import { News } from "@/components/news";
 import { Papers } from "@/components/papers";
-import { Education } from "@/components/education";
-import { Honor } from "@/components/honor";
+import { Demos } from "@/components/demos";
+import { ResearchInterests } from "@/components/research_interests";
+// import { Education } from "@/components/education";
+// import { Honor } from "@/components/honor";
 
 export default function IndexPage() {
   return (
@@ -67,40 +69,52 @@ export default function IndexPage() {
         </svg>
       </div>
       <section className="max-w-[800px] flex flex-col items-center justify-center mx-auto gap-4 py-5 md:py-5">
-        <Card className="w-full shadow-none  bg-gray-0">
-          <CardHeader className="justify-between">
-            <div className="flex gap-5 items-center relative overflow-visible">
-              <Image
-                isZoomed
-                // isBlurred
-                className="aspect-square overfolow-visible"
-                // radius="full"
-                src={profileData.photo}
-                width={100}
-              />
-              <div className="flex flex-col">
-                <p className="text-lg font-bold">
-                  {profileData.name} ({profileData.name_zh})
-                </p>
-                <p className="text-small text-default-500">
-                  {profileData.note}
-                </p>
-              </div>
+      <Card className="w-full shadow-none bg-transparent border-none">
+        {/* 1. items-start 让图片和文字顶部对齐，不要居中 */}
+        <div className="flex flex-col md:flex-row gap-12 items-start py-4">
+          
+          {/* 左侧照片 */}
+          <div className="flex-shrink-0">
+            <Image
+              isZoomed
+              className="object-cover rounded-2xl shadow-sm"
+              src={profileData.photo}
+              width={240} // 图片可以再稍微大一点点
+            />
+          </div>
+
+          {/* 右侧文字区：把名字塞进来 */}
+          <div className="flex flex-col flex-grow text-left">
+            {/* 名字现在是文字区的一部分了 */}
+            <h1 className="text-4xl font-bold mb-4">
+              {profileData.name} <span className="text-2xl font-normal ml-2">({profileData.name_zh})</span>
+            </h1>
+            
+            <div className="text-default-700 text-[1.1rem] leading-relaxed mb-6">
+              {profileData.description}
             </div>
-          </CardHeader>
-          <CardBody className="px-3 py-0">
-            <p>{profileData.description}</p>
-          </CardBody>
-          <CardFooter className="gap-3 text-small text-default-400">
-            <div className=" w-full">
-              <Divider className="my-2" />
-              <div className="flex flex-start items-center">
-                <LocationIcon className="mx-2 h-4" />{" "}
-                {profileData.institute.join(", ")}, {profileData.location}
+
+            {/* 链接行：简洁一点 */}
+            {/* <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-default-500 text-sm italic">
+              <Link href={siteConfig.links.scholar} isExternal color="primary" className="flex items-center gap-1">
+                <ScholarIcon className="w-4 h-4" /> Google Scholar
+              </Link>
+              <span>/</span>
+              <Link href={siteConfig.links.github} isExternal color="primary" className="flex items-center gap-1">
+                <GithubIcon className="w-4 h-4" /> GitHub
+              </Link>
+              <span>/</span>
+              <div className="flex items-center gap-1">
+                <EmailIcon className="w-4 h-4" /> {profileData.email}
               </div>
-            </div>
-          </CardFooter>
-        </Card>
+            </div> */}
+
+            {/* <div className="mt-2 text-default-400 text-xs flex items-center">
+              <LocationIcon className="mr-1 h-3" /> {profileData.institute.join(", ")}, {profileData.location}
+            </div> */}
+          </div>
+        </div>
+      </Card>
 
         <div className="flex gap-3 flex-row hidden sm:flex">
           <Snippet
@@ -137,6 +151,11 @@ export default function IndexPage() {
           </Button>
         </div>
 
+        {/* 新增：Research Interests 模块 */}
+        {/* <div className="w-full flex flex-wrap justify-start items-center">
+          <ResearchInterests />
+        </div> */}
+
         <div className="w-full flex flex-wrap justify-start items-center">
           <News />
         </div>
@@ -144,30 +163,27 @@ export default function IndexPage() {
         <div className="w-full flex flex-wrap justify-start items-center">
           <div className="text-lg font-bold">Selected Publications</div>
           <Papers />
-
-          {/* <Tabs aria-label="Options" radius="full">
-          <Tab key="selected" title="Selected">
-              <Papers />
-            </Tab>
-            <Tab key="accepted" title="Accepted">
-              <Papers accepted/>
-            </Tab>
-            <Tab key="preprint" title="Preprint">
-              <Papers preprint />
-            </Tab>
-          </Tabs> */}
         </div>
-        <div className="w-full flex flex-wrap justify-start items-center">
+        
+        {/* <div className="w-full flex flex-wrap justify-start items-center">
+          <div className="text-lg font-bold">Demo Systems</div>
+          <Demos />
+        </div> */}
+                
+        {/* <div className="w-full flex flex-wrap justify-start items-center">
           <div className="text-lg font-bold">Education Experiences </div>
           <Education />
-        </div>
-        <div className="w-full flex flex-wrap justify-start items-center">
+        </div> */}
+
+        {/* <div className="w-full flex flex-wrap justify-start items-center">
           <Honor />
-        </div>
+        </div> */}
+
         <div className="w-full flex flex-wrap justify-start items-center">
           <div className="text-lg font-bold mr-5">Services </div>
           <div>Reviewer for ICML, ICLR, KDD, MM, TKDE, IJCV, etc</div>
         </div>
+
       </section>
     </DefaultLayout>
   );

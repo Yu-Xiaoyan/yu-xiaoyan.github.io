@@ -2,25 +2,26 @@ import { Code } from "@nextui-org/code";
 
 import { Paper } from "./paper";
 
-import { paperSelectedData } from "@/data/paper_selected";
+import { paperCategories } from "@/data/paper_selected";
 
 export const Papers = () => {
-  let paperDoms;
-
-  paperDoms = paperSelectedData.map((data) => (
-    <Paper key={data.title} {...data} />
-  ));
-
   return (
-    <div className="flex flex-col items-center  my-5">
-      {/* <ScrollShadow hideScrollBar className="p-5 h-[550px]"> */}
-      <div className="grid gap-4">{paperDoms}</div>
-      {/* </ScrollShadow> */}
+    <div className="flex flex-col items-center my-5">
+      {paperCategories.map((cat) => (
+        <div key={cat.category} className="w-full mb-6">
+          <div className="text-sm font-bold text-default-500 uppercase tracking-wider mb-3">
+            {cat.category}
+          </div>
+          <div className="grid gap-4">
+            {cat.papers.map((data) => (
+              <Paper key={data.title} {...data} />
+            ))}
+          </div>
+        </div>
+      ))}
 
       <br />
-      <center style={{ fontFamily: "Oleo Script" }}>&quot;Stay Hungry, Stay Foolish&quot;</center>
-
-      {/* <Snippet symbol="" variant="bordered">Stay Hungry, Stay Foolish</Snippet> */}
+      <center style={{ fontFamily: "Oleo Script" }}>&quot;Maintain an equanimous mind.&quot;</center>
     </div>
   );
 };

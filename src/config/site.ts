@@ -1,9 +1,9 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Xiaohao Liu's Homepage",
+  name: "Xiaoyan's Homepage",
   year: new Date().getFullYear(),
-  description: "Xiaohao Liu's Homepage",
+  description: "Xiaoyan's Homepage",
   navItems: [
     {
       label: "Bio",
@@ -21,8 +21,8 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/Xiaohao-Liu",
-    scholar: "https://scholar.google.com/citations?user=pIGIxewAAAAJ&hl=en",
-    email: "mailto:xiaohao.liu@u.nus.edu",
+    github: "https://github.com/XiaoyanWork",
+    scholar: "https://scholar.google.com/citations?user=MgsexesAAAAJ&hl=zh-CN",
+    email: "mailto:xiaoyan.yu@ntu.edu.sg",
   },
 };

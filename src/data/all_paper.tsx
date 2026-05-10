@@ -1,297 +1,323 @@
-import LARP_figure from "@/assets/img/paper/LARP.png";
-import BundleGT_figure from "@/assets/img/paper/BundleGT.png";
-import CLHE_figure from "@/assets/img/paper/CLHE.png";
-import ElimRec_figure from "@/assets/img/paper/ElimRec.png";
-import SLMRec_figure from "@/assets/img/paper/SLMRec.png";
-import BundleLLM_figure from "@/assets/img/paper/BundleLLM.png";
-import ModalBed_figure from "@/assets/img/paper/ModalBed.png";
-import ToDA_figure from "@/assets/img/paper/ToDA.png";
-import DNS_figure from "@/assets/img/paper/DNS.png";
-import DyViM_figure from "@/assets/img/paper/DyViM.png";
-import LLM2Rec_figure from "@/assets/img/paper/LLM2Rec.png";
-import LMTP_figure from "@/assets/img/paper/LMTP.png";
-import AlphaSteer_figure from "@/assets/img/paper/AlphaSteer.png";
-import PMRL_figure from "@/assets/img/paper/PMRL.png";
-import CalMRL_figure from "@/assets/img/paper/CalMRL.png";
+import Neeko_figure from "@/assets/img/paper/Neeko.png";
+import DAMe_figure from "@/assets/img/paper/DAMe.png";
+import HyperSED_figure from "@/assets/img/paper/HyperSED.png";
+import SocialED_figure from "@/assets/img/paper/SocialED.png";
 
-export const CalMRL = {
+export const Neeko = {
   title:
-    "Calibrated Multimodal Representation Learning with Missing Modalities",
+    "Neeko: Leveraging Dynamic LoRA for Efficient Multi-Character Role-Playing Agent",
   authors: (
     <>
-      <strong key="me">Xiaohao Liu</strong>, Xiaobo Xia, Jiaheng Wei, Shuo Yang,
-      Xiu Su, See-Kiong Ng, Tat-Seng Chua
+      <strong key="me">Xiaoyan Yu</strong>, Tongxu Luo, Yifan Wei, Fangyu Lei, Yiming Huang, Hao Peng, Liehuang Zhu
     </>
   ),
-  accepted: "",
-  date: "Nov 2025",
+  accepted: "EMNLP 2024",
+  date: "Feb 2024",
   remark: <></>,
-  thumbnail: CalMRL_figure,
-  paper_link: "https://arxiv.org/pdf/2511.12034",
+  thumbnail: Neeko_figure,
+  paper_link: "https://aclanthology.org/2024.emnlp-main.697/",
+  code_link: "https://github.com/weiyifan1023/Neeko",
+};
+
+export const DAMe = {
+  title:
+    "DAMe: Personalized Federated Social Event Detection with Dual Aggregation Mechanism",
+  authors: (
+    <>
+      <strong key="me">Xiaoyan Yu</strong>, Yifan Wei, Pu Li, Shuaishuai Zhou, Hao Peng, Li Sun, Liehuang Zhu, Philip S. Yu
+    </>
+  ),
+  accepted: "CIKM 2024",
+  date: "Sep 2024",
+  remark: <></>,
+  thumbnail: DAMe_figure,
+  paper_link: "https://dl.acm.org/doi/pdf/10.1145/3627673.3679551",
+  code_link: "https://github.com/XiaoyanWork/DAMe",
+};
+
+export const HyperSED = {
+  title:
+    "Towards Effective, Efficient and Unsupervised Social Event Detection in the Hyperbolic Space",
+  authors: (
+    <>
+      <strong key="me">Xiaoyan Yu</strong>, Yifan Wei, Shuaishuai Zhou, Zhiwei Yang, Li Sun, Hao Peng, Liehuang Zhu, Philip S Yu
+    </>
+  ),
+  accepted: "AAAI 2025",
+  date: "Dec 2024",
+  remark: <></>,
+  thumbnail: HyperSED_figure,
+  paper_link: "https://arxiv.org/abs/2412.10712",
+  code_link: "https://github.com/XiaoyanWork/HyperSED",
+};
+
+export const SocialED = {
+  title:
+    "SocialED: A Python Library for Social Event Detection",
+  authors: (
+    <>
+      Kun Zhang, <strong key="me">Xiaoyan Yu</strong>, Pu Li, Hao Peng, Philip S Yu
+    </>
+  ),
+  accepted: "APWeb-WAIM 2025 🏆 Best Demo Paper",
+  date: "Dec 2024",
+  remark: <></>,
+  thumbnail: SocialED_figure,
+  paper_link: "https://arxiv.org/abs/2412.13472",
+  code_link: "https://github.com/RingBDStack/SocialED",
+};
+
+export const CLIPDriven = {
+  title:
+    "CLIP-Driven Semantic Discovery Network for Visible-Infrared Person Re-Identification",
+  authors: (
+    <>
+      <strong key="me">Xiaoyan Yu</strong>, Na Dong, Liehuang Zhu, Hao Peng, Dacheng Tao
+    </>
+  ),
+  accepted: "TMM 2024",
+  date: "2024",
+  remark: <></>,
+  paper_link: "",
   code_link: "",
 };
 
-export const PMRL = {
-  title: "Principled Multimodal Representation Learning",
+export const MultiExpertAdaptive = {
+  title:
+    "Multi-expert Adaptive Selection: Task-balancing for All-in-One Image Restoration",
   authors: (
     <>
-      <strong key="me">Xiaohao Liu</strong>, Xiaobo Xia, See-Kiong Ng, Tat-Seng
-      Chua
+      <strong key="me">Xiaoyan Yu</strong>, Shuaishuai Zhou, Hao Li, Liehuang Zhu
     </>
   ),
-  accepted: "",
-  date: "Jul 2025",
+  accepted: "TCSVT 2024",
+  date: "2024",
   remark: <></>,
-  thumbnail: PMRL_figure,
-  paper_link: "https://arxiv.org/pdf/2507.17343",
+  paper_link: "",
   code_link: "",
 };
 
-export const LMTP = {
+export const SpatialMultiSemantic = {
   title:
-    "L-MTP: Leap Multi-Token Prediction Beyond Adjacent Context for Large Language Models",
+    "Spatial Multi-semantic Features Guided Spectral-friendly Transformer Network for Hyperspectral Image Classification",
   authors: (
     <>
-      <strong key="me">Xiaohao Liu</strong>, Xiaobo Xia, Weixiang Zhao, Manyi
-      Zhang, Xianzhi Yu, Xiu Su, Shuo Yang, See-Kiong Ng, Tat-Seng Chua
+      <strong key="me">Xiaoyan Yu</strong>, Mingyang Tai, Yue Wang, Zhengyong Shu, Liehuang Zhu
     </>
   ),
-  accepted: "NeurIPS",
-  date: "Sep 2025",
+  accepted: "Pattern Recognition 2025",
+  date: "2025",
   remark: <></>,
-  thumbnail: LMTP_figure,
-  paper_link: "https://arxiv.org/pdf/2505.17505",
-  code_link: "https://github.com/Xiaohao-Liu/L-MTP",
-};
-
-export const AlphaSteer = {
-  title:
-    "AlphaSteer: Learning Refusal Steering with Principled Null-Space Constraint",
-  authors: (
-    <>
-      Leheng Sheng, Changshuo Shen, Weixiang Zhao, Junfeng Fang,{" "}
-      <strong key="me">Xiaohao Liu</strong>, Zhenkai Liang, Xiang Wang, An
-      Zhang, Tat-Seng Chua
-    </>
-  ),
-  accepted: "",
-  date: "May 2025",
-  remark: <></>,
-  thumbnail: AlphaSteer_figure,
-  paper_link: "https://arxiv.org/pdf/2506.07022",
-  code_link: "https://github.com/AlphaLab-USTC/AlphaSteer",
-};
-
-export const LLM2Rec = {
-  title:
-    "LLM2Rec: Large Language Models Are Powerful Embedding Models for Sequential Recommendation",
-  authors: (
-    <>
-      Yingzhi He*, <strong key="me">Xiaohao Liu*</strong>, An Zhang, Yunshan Ma,
-      Tat-Seng Chua
-    </>
-  ),
-  accepted: "KDD",
-  date: "Aug 2025",
-  remark: <></>,
-  thumbnail: LLM2Rec_figure,
-  paper_link: "https://arxiv.org/pdf/2506.21579",
-  code_link: "https://github.com/HappyPointer/LLM2Rec",
-};
-
-export const DyViM = {
-  title: "Extending Visual Dynamics for Video-to-Music Generation",
-  authors: (
-    <>
-      <strong key="me">Xiaohao Liu</strong>, Teng Tu, Yunshan Ma, Tat-Seng Chua
-    </>
-  ),
-  accepted: "",
-  date: "Apr 2025",
-  remark: <></>,
-  thumbnail: DyViM_figure,
-  paper_link: "https://arxiv.org/pdf/2504.07594",
+  paper_link: "",
   code_link: "",
 };
 
-export const DNS = {
-  title: "Continual Multimodal Contrastive Learning",
+export const DecoupledGNNs = {
+  title:
+    "Decoupled GNNs based on Multi-view Contrastive Learning for scRNA-seq Data Clustering",
   authors: (
     <>
-      <strong key="me">Xiaohao Liu</strong>, Xiaobo Xia, See-Kiong Ng, Tat-Seng
-      Chua
+      <strong key="me">Xiaoyan Yu</strong>, Ying Ren, Ming Xia, Zhengyong Shu, Liehuang Zhu
     </>
   ),
-  accepted: "NeurIPS",
-  date: "Sep 2025",
+  accepted: "Briefings in Bioinformatics 2025",
+  date: "2025",
   remark: <></>,
-  thumbnail: DNS_figure,
-  paper_link: "https://arxiv.org/pdf/2503.14963",
-  code_link: "https://github.com/Xiaohao-Liu/CMCL",
+  paper_link: "",
+  code_link: "",
 };
 
-export const ModalBed = {
+export const PromptSED = {
   title:
-    "Towards Modality Generalization: A Benchmark and Prospective Analysis",
+    "PromptSED: An Evolving Topic-Enhanced Prompting Framework for Incremental Social Event Detection",
   authors: (
     <>
-      <strong key="me">Xiaohao Liu</strong>, Xiaobo Xia, Zhuo Huang, See-Kiong
-      Ng, Tat-Seng Chua
+      <strong key="me">Xiaoyan Yu</strong>, Jing Ren, Lin Jiang, Hao Peng, Zhihao Hao, Li Sun, Kun Peng, Liehuang Zhu, Philip S. Yu
     </>
   ),
-  accepted: "MM (Oral)",
-  date: "Aug 2025",
+  accepted: "Neural Networks 2025",
+  date: "2025",
   remark: <></>,
-  thumbnail: ModalBed_figure,
-  paper_link: "https://arxiv.org/pdf/2412.18277",
-  code_link: "https://github.com/Xiaohao-Liu/ModalBed",
+  paper_link: "",
+  code_link: "",
 };
 
-export const BundleMLLM = {
-  title: "Fine-tuning Multimodal Large Language Models for Product Bundling",
-  authors: (
-    <>
-      <strong key="me">Xiaohao Liu</strong>, Jie Wu, Zhulin Tao, Yunshan Ma,
-      Yinwei Wei, Tat-Seng Chua
-    </>
-  ),
-  accepted: "KDD",
-  date: "Aug 2025",
-  remark: <> </>,
-  thumbnail: BundleLLM_figure,
-  paper_link: "https://arxiv.org/pdf/2407.11712",
-  code_link: "https://github.com/Xiaohao-Liu/Bundle-MLLM",
-};
-export const LARP = {
+export const Menatqa = {
   title:
-    "LARP: Language Audio Relational Pre-training for Cold-Start Playlist Continuation",
+    "Menatqa: A New Dataset for Testing the Temporal Comprehension and Reasoning Abilities of Large Language Models",
   authors: (
     <>
-      Rebecca Salganik*,
-      <strong key="me">Xiaohao Liu*</strong>, Yunshan Ma, Jian Kang, Tat-Seng
-      Chua
+      Yifan Wei, Yisong Su, Huanhuan Ma, <strong key="me">Xiaoyan Yu</strong>, Fangyu Lei, Yuanzhe Zhang, Jun Zhao, Kang Liu
     </>
   ),
-  accepted: "KDD",
-  date: "Aug 2024",
-  remark: (
-    <>
-      We introduce LARP, a multi-modal cold-start playlist continuation model
-      which employs a three-layered contrastive learning framework that
-      integrates both multi-modal and relational signals into its learned
-      representations with increasing layers of task-specific pdftraction:
-      within-track (language-audio) contrastive loss, track-track contrastive
-      loss, and track-playlist contrastive loss.
-    </>
-  ),
-  thumbnail: LARP_figure,
-  paper_link: "https://arxiv.org/pdf/2406.14333",
-  code_link: "https://github.com/Rsalganik1123/LARP",
-};
-export const CLHE = {
-  title:
-    "Leveraging Multimodal Features and Item-level User Feedback for Bundle Construction",
-  authors: (
-    <>
-      Yunshan Ma,
-      <strong key="me">Xiaohao Liu</strong>, Yinwei Wei, Zhulin Tao, Xiang Wang,
-      Tat-Seng Chua,
-    </>
-  ),
-  accepted: "WSDM",
-  date: "Oct 2024",
-  remark: (
-    <>
-      We learn effective representations by optimally unifying multiple
-      features, while addressing the issues of modality missing, noise, and
-      sparsity, thus introducing the Contrastive Learning-enhanced Hierarchical
-      Encoder method (CLHE).
-    </>
-  ),
-  thumbnail: CLHE_figure,
-  paper_link: "https://arxiv.org/pdf/2310.18770",
-  code_link: "https://github.com/Xiaohao-Liu/CLHE",
-};
-
-export const BundleGT = {
-  title: "Strategy-aware Bundle Recommender System",
-  authors: (
-    <>
-      Yinwei Wei,
-      <strong key="me">Xiaohao Liu</strong>, Yunshan Ma, Xiang Wang, Liqiang
-      Nie, Tat-Seng Chua,
-    </>
-  ),
-  accepted: "SIGIR",
-  date: "Apr 2023",
-  remark: (
-    <>
-      Bundle Graph Transformer, termed BundleGT, is a novel model for bundle
-      recommendation, which explore the strategy-aware user and bundle
-      representations for user-bundle interaction prediction.
-    </>
-  ),
-  thumbnail: BundleGT_figure,
-  paper_link: "https://dl.acm.org/doi/10.1145/3539618.3591771",
-  code_link: "https://github.com/Xiaohao-Liu/BundleGT",
-};
-
-export const EliMRec = {
-  title: "EliMRec: Eliminating Single-modal Bias in Multimedia Recommendation",
-  authors: (
-    <>
-      <strong key="me">Xiaohao Liu</strong>, Zhulin Tao, Jiahong Shao, Lifang
-      Yang, Xianglin Huang,
-    </>
-  ),
-  accepted: "MM",
-  date: "June 2022",
-  remark: (
-    <>
-      We explored single-modal bias by revealing the inner working of
-      multi-modal fusion and achieved a generic framework EliMRec so as to
-      eliminate single-modal bias in multimedia recommendation.
-    </>
-  ),
-  thumbnail: ElimRec_figure,
-  paper_link: "https://dl.acm.org/doi/pdf/10.1145/3503161.3548404",
-  code_link: "https://github.com/Xiaohao-Liu/EliMRec",
-};
-export const SLMRec = {
-  title: "Self-supervised Learning for Multimedia Recommendation",
-  authors: (
-    <>
-      Zhulin Tao,
-      <strong key="me">Xiaohao Liu</strong>, Yewei Xia, Xiang Wang, Lifang Yang,
-      Xianglin Huang, Tat-Seng Chua,
-    </>
-  ),
-  accepted: "TMM",
-  date: "June 2022",
-  remark: (
-    <>
-      We go beyond the supervised learning paradigm, and incorporate the idea of
-      self-supervised learning (SSL) into multimedia recommendation, to capture
-      multi-modal patterns in the data itself.
-    </>
-  ),
-  thumbnail: SLMRec_figure,
-  paper_link: "https://ieeexplore.ieee.org/document/9811387",
-  code_link: "https://github.com/Xiaohao-Liu/SLMRec",
-};
-export const ToDA = {
-  title:
-    "ToDA: Target-oriented Diffusion Attacker against Recommendation System ",
-  authors: (
-    <>
-      <strong key="me">Xiaohao Liu</strong>, Zhulin Tao, Ting Jiang, He Chang,
-      Yunshan Ma, Yinwei Wei, Xiang Wang
-    </>
-  ),
-  accepted: "",
-  date: "Submitted to TIFS",
+  accepted: "Findings of EMNLP 2023",
+  date: "2023",
   remark: <></>,
-  thumbnail: ToDA_figure,
+  paper_link: "",
+  code_link: "",
+};
+
+export const RelationalPrompt = {
+  title:
+    "Relational Prompt-based Pre-trained Language Models for Social Event Detection",
+  authors: (
+    <>
+      Pu Li, <strong key="me">Xiaoyan Yu</strong>, Hao Peng, Yangyang Xian, Lei Wang, Li Sun, Jiawei Zhang, Philip S. Yu
+    </>
+  ),
+  accepted: "TOIS 2024",
+  date: "2024",
+  remark: <></>,
+  paper_link: "",
+  code_link: "",
+};
+
+export const KnowledgeLocalization = {
+  title:
+    "Does Knowledge Localization Hold True? Surprising Differences Between Entity and Relation Perspectives in Language Models",
+  authors: (
+    <>
+      Yifan Wei, <strong key="me">Xiaoyan Yu</strong>, Yujia Weng, Huanhuan Ma, Yuanzhe Zhang, Jun Zhao, Kang Liu
+    </>
+  ),
+  accepted: "CIKM 2024",
+  date: "2024",
+  remark: <></>,
+  paper_link: "",
+  code_link: "",
+};
+
+export const AutoTIR = {
+  title:
+    "AutoTIR: Autonomous Tools Integrated Reasoning via Reinforcement Learning",
+  authors: (
+    <>
+      Yifan Wei, <strong key="me">Xiaoyan Yu</strong>, Yujia Weng, Tongzhi Pan, Ao Li, Le Du
+    </>
+  ),
+  accepted: "arXiv 2025",
+  date: "2025",
+  remark: <></>,
+  paper_link: "",
+  code_link: "",
+};
+
+export const MultiViewIncongruity = {
+  title:
+    "Multi-view Incongruity Learning for Multimodal Sarcasm Detection",
+  authors: (
+    <>
+      Dongyuan Guo, Chen Cao, Fangkai Yuan, Ying Liu, Guanghe Zeng, <strong key="me">Xiaoyan Yu</strong>, Hao Peng, Philip S. Yu
+    </>
+  ),
+  accepted: "COLING 2025",
+  date: "2025",
+  remark: <></>,
+  paper_link: "",
+  code_link: "",
+};
+
+export const AdaptiveDifferentialPrivacy = {
+  title:
+    "Adaptive Differentially Private Structural Entropy Minimization for Unsupervised Social Event Detection",
+  authors: (
+    <>
+      Zhiwei Yang, Yifan Wei, Hao Li, Qing Li, Lin Jiang, Li Sun, <strong key="me">Xiaoyan Yu</strong>, Chen Hu, Hao Peng
+    </>
+  ),
+  accepted: "CIKM 2024",
+  date: "2024",
+  remark: <></>,
+  paper_link: "",
+  code_link: "",
+};
+
+export const UNOArena = {
+  title:
+    "UNO Arena for Evaluating Sequential Decision-Making Capability of Large Language Models",
+  authors: (
+    <>
+      Zhen Qin, Haoyang Wang, Dongyang Liu, Zikang Song, Chenxiao Fan, Zhipeng Lv, Jiaqi Wu, Zhen Lei, Zhaoxuan Tu, Di Chu, <strong key="me">Xiaoyan Yu</strong>, et al.
+    </>
+  ),
+  accepted: "EMNLP 2024",
+  date: "2024",
+  remark: <></>,
+  paper_link: "",
+  code_link: "",
+};
+
+export const TableFilling = {
+  title:
+    "Table-Filling via Mean Teacher for Cross-domain Aspect Sentiment Triplet Extraction",
+  authors: (
+    <>
+      Kun Peng, Lin Jiang, Qing Li, Hao Li, <strong key="me">Xiaoyan Yu</strong>, Li Sun, Shitong Sun, Yixian Bi, Hao Peng
+    </>
+  ),
+  accepted: "CIKM 2024",
+  date: "2024",
+  remark: <></>,
+  paper_link: "",
+  code_link: "",
+};
+
+export const StructuralEntropy = {
+  title:
+    "Structural Entropy Guided Agent for Detecting and Repairing Knowledge Deficiencies in LLMs",
+  authors: (
+    <>
+      Yifan Wei, <strong key="me">Xiaoyan Yu</strong>, Tongzhi Pan, Ao Li, Le Du
+    </>
+  ),
+  accepted: "NeurIPS 2025",
+  date: "2025",
+  remark: <></>,
+  paper_link: "",
+  code_link: "",
+};
+
+export const IoTto5G = {
+  title:
+    "From IoT to 5G I-IoT: The Next Generation IoT-Based Intelligent Algorithms and 5G Technologies",
+  authors: (
+    <>
+      Dong Wang, Dong Chen, Bin Song, N. Guizani, <strong key="me">Xiaoyan Yu</strong>, Xiaojiang Du
+    </>
+  ),
+  accepted: "IEEE Communications Magazine 2018",
+  date: "2018",
+  remark: <></>,
+  paper_link: "",
+  code_link: "",
+};
+
+export const AccountableCredential = {
+  title:
+    "Accountable Credential Management System for Vehicular Communication",
+  authors: (
+    <>
+      S. Khan, Liehuang Zhu, <strong key="me">Xiaoyan Yu</strong>, Zijian Zhang, M. A. Rahim, M. Khan, Xiaojiang Du, M. Guizani
+    </>
+  ),
+  accepted: "Vehicular Communications 2020",
+  date: "2020",
+  remark: <></>,
+  paper_link: "",
+  code_link: "",
+};
+
+export const LifelongIntent = {
+  title:
+    "Lifelong Intent Detection via Multi-Strategy Rebalancing",
+  authors: (
+    <>
+      Qianlong Liu, <strong key="me">Xiaoyan Yu</strong>, Shizhu He, Kang Liu, Jun Zhao
+    </>
+  ),
+  accepted: "arXiv 2021",
+  date: "2021",
+  remark: <></>,
   paper_link: "",
   code_link: "",
 };

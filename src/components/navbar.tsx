@@ -54,7 +54,7 @@ export const Navbar = () => {
             color="foreground"
             href="/"
           >
-            <p className="font-bold text-inherit">Xiaohao Liu</p>
+            <p className="font-bold text-inherit">Xiaoyan Yu</p>
           </Link>
           <span className="mx-2">|</span>
           {siteConfig.navItems.map((item) => (

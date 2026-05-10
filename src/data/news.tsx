@@ -1,80 +1,84 @@
 export type NewsConfig = typeof newsData;
 import { Image } from "@nextui-org/image";
 
-import NUS from "@/assets/img/nus.svg";
+import NTU from "@/assets/img/ntu.png";
 import NExT from "@/assets/img/next.png";
-import { GithubIcon } from "@/components/icons";
 
 export const newsData = [
   {
     type: "",
-    date: "18-Sep-2025",
-    event: <>Three papers are accepted by NeurIPS 2025!</>,
+    date: "1-May-2026",
+    event: <>Two papers are accepted by ICML 2026!</>,
   },
   {
     type: "",
-    date: "01-Aug-2025",
-    event: <>One paper is accepted by MM 2025!</>,
-  },
-  {
-    type: "",
-    date: "15-May-2025",
-    event: <>One paper is accepted by KDD 2025!</>,
-  },
-  {
-    type: "",
-    date: "25-Dec-2024",
+    date: "30-Apr-2026",
     event: (
       <>
-        A benchmark for modality generalization is released:{" "}
-        <GithubIcon size={18} /> <strong>ModalBed</strong>!
-      </>
-    ),
-  },
-  {
-    type: "",
-    date: "17-Nov-2024",
-    event: <>One paper is accepted by KDD 2025!</>,
-  },
-  {
-    type: "",
-    date: "23-Jul-2024",
-    event: (
-      <>
-        I joined <strong style={{ display: "contents" }}>NUS</strong>{" "}
+        I am joining <strong style={{ display: "contents" }}>NTU</strong>{" "}
         <Image
-          alt="NUS"
+          alt="NTU"
           height={16}
           radius="none"
-          src={NUS}
+          src={NTU}
           style={{ padding: "0 3px" }}
           width={22}
         />{" "}
-        as a Ph.D. student!
+        as a Postdoctoral Research Fellow!
       </>
     ),
   },
   {
-    type: "image",
-    date: "17-May-2024",
-    event: <>One paper is accepted by KDD 2024!</>,
+    type: "",
+    date: "7-Apr-2026",
+    event: <>One paper is accepted by ACL 2026!</>,
   },
   {
     type: "",
-    date: "20-Oct-2023",
-    event: <>One paper is accepted by WSDM 2024!</>,
+    date: "8-Nov-2025",
+    event: <>Two papers are accepted by AAAI 2026!</>,
   },
   {
     type: "",
-    date: "05-Apr-2023",
-    event: <>One paper is accepted by SIGIR 2023!</>,
+    date: "24-Oct-2025",
+    event: <>One paper is accepted by WSDM 2026!</>,
   },
   {
     type: "",
-    date: "01-Apr-2023",
+    date: "24-Oct-2025",
+    event: <>One paper is accepted by CIKM 2025!</>,
+  },
+  {
+    type: "",
+    date: "11-Oct-2025",
+    event: <>I'm selected for the National Scholarship!</>,
+  },
+  {
+    type: "",
+    date: "19-Sep-2025",
+    event: <>One paper is accepted by NeurIPS 2025!</>,
+  },
+  {
+    type: "",
+    date: "12-Sep-2025",
+    event: <>One demo system is selected as the Best Demo🏆 at APWeb-WAIM 2025!</>,
+  },
+  {
+    type: "",
+    date: "16-Aug-2025",
+    event: <>One paper is accepted by TMM!</>,
+  },
+  {
+    type: "",
+    date: "29-Apr-2024",
+    event: <>One paper is accepted by IJCAI 2025!</>,
+  },
+  {
+    type: "",
+    date: "12-Mar-2025",
     event: (
       <>
-        I joined{" "}
+        I'm joining{" "}
         <Image
           alt="NExT"
           height={16}
@@ -83,18 +87,33 @@ export const newsData = [
           style={{ padding: "0 3px" }}
           width={64}
         />{" "}
-        as a research assistant!
+        as a visiting Ph.D. student!
       </>
     ),
   },
   {
     type: "",
-    date: "30-Jun-2022",
-    event: <>One paper is accepted by MM 2022!</>,
+    date: "7-Dec-2024",
+    event: <>One paper is accepted by TCSVT!</>,
   },
   {
     type: "",
-    date: "15-Jun-2022",
-    event: <>One paper is accepted by TMM 2022!</>,
+    date: "10-Dec-2024",
+    event: <>One paper is accepted by AAAI 2025 as oral!</>,
+  },
+  {
+    type: "",
+    date: "7-Nov-2024",
+    event: <>One paper is accepted by TMM!</>,
+  },
+  {
+    type: "",
+    date: "20-Sep-2024",
+    event: <>Two papers are accepted by EMNLP 2024!</>,
+  },
+  {
+    type: "",
+    date: "16-Jun-2024",
+    event: <>Four papers are accepted by CIKM 2024!</>,
   },
 ];
